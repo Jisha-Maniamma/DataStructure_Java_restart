@@ -1,5 +1,6 @@
 package binarySearch_and_insert;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class searchAndInsert {
@@ -11,21 +12,30 @@ public class searchAndInsert {
         getIntegerTosearch();
 
 
-        System.out.println("enetr array size you want to play with");
+        System.out.print("enetr array size you want to play with");
         arraysize=scan.nextInt();
         getarray(arraysize);
+        System.out.println(Arrays.toString(myArray));
 
 
     }
     private static void getIntegerTosearch(){
         System.out.print("enter your integer that you want to search: ");
         if(scan.hasNextInt())
-        { toSearch=scan.nextInt();
-            System.out.println(toSearch);}
-        else
-            System.out.println("Enter a valid number");
+          toSearch=scan.nextInt();
+
     }
 
+    private static void getarray(int size){
+        int position=0;
+        myArray=new int[size];
+        while(position<size){
+            System.out.print("eneter number at position "+position+" :");
+            myArray[position]=scan.nextInt();
+            position++;
+        }
+
+    }
 
 
 }
