@@ -29,7 +29,9 @@ public class sortingArray1 {
     private static void selectionSorting(int[] array){
         for (int i=0;i<array.length;i++){
 
-            for(int j=i+1;j<array.length;j++)
+            for(int j=i+1;j<array.length;j++){
+
+            }
         }
 
         System.out.println(Arrays.toString(array));
