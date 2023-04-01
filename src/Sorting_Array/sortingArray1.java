@@ -28,5 +28,7 @@ public class sortingArray1 {
     }
     private static void selectionSorting(int[] array){
 
+        System.out.println(Arrays.toString(array));
+
     }
 }
