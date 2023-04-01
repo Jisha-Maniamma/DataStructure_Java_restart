@@ -8,10 +8,10 @@ public class sortingArray1 {
 //    Output: [1,2,3,5]
 
     public static void main(String[] args) {
-        sortarray(input);
+        bubbleSortarray(input);
     }
 
-    private static void sortarray(int[] input) {
+    private static void bubbleSortarray(int[] input) {
         int arrayLength= input.length;
         for(int i=0;i<arrayLength;i++){
             for(int j=i+1;j<arrayLength;j++){
