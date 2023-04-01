@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class sortingArray1 {
    static int[] input={5,2,3,1};
-   static int count;
+
 //    Input: nums = [5,2,3,1]
 //    Output: [1,2,3,5]
 
@@ -14,9 +14,11 @@ public class sortingArray1 {
     }
 
     private static void bubbleSortarray(int[] input) {
+       int  count=0;
         int arrayLength= input.length;
         for(int i=0;i<arrayLength;i++){
             for(int j=i+1;j<arrayLength;j++){
+                count++;
                 if(input[i]>input[j]) {
                     int temp=input[i];
                     input[i] = input[j];
@@ -25,17 +27,17 @@ public class sortingArray1 {
             }
 
         }
-        System.out.println(Arrays.toString(input));
+        System.out.println(Arrays.toString(input)+ " "+count);
     }
     private static void selectionSorting(int[] array){
-      //  int count = 0;
+        int count = 0;
         int currentSmallest;
         int nextSmallest;
         for (int i=0;i<array.length;i++){
         currentSmallest=nextSmallest=i;
             for(int j=i+1;j<array.length;j++){
                 count++;
-                System.out.println("i value is "+i+" j value is  "+j);
+               // System.out.println("i value is "+i+" j value is  "+j);
                 if(array[i]>array[j]){
                     nextSmallest=j;
 
