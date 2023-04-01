@@ -9,6 +9,7 @@ public class sortingArray1 {
 
     public static void main(String[] args) {
         bubbleSortarray(input);
+        selectionSorting(input);
     }
 
     private static void bubbleSortarray(int[] input) {
@@ -24,5 +25,8 @@ public class sortingArray1 {
 
         }
         System.out.println(Arrays.toString(input));
+    }
+    private static void selectionSorting(int[] array){
+
     }
 }
